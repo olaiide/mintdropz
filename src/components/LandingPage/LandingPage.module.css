@@ -19,7 +19,6 @@
   width: 50%;
 }
 .rightContent {
-  background-color:;
   width: 40%;
   text-align: start;
   margin: 0;
@@ -105,7 +104,6 @@ input:placeholder {
   width: 90%;
   margin: 0 auto;
   padding-bottom: 20px;
-  background-color:;
   overflow: hidden;
 }
 .collectionsHeader {
@@ -145,7 +143,6 @@ letter-spacing: 0em;
   justify-content: center;
   row-gap: 30px;
   column-gap: 30px;
-  background-color: ;
   padding: 0;
 }
 .card {
@@ -169,16 +166,31 @@ letter-spacing: 0em;
 }
 
 .img_container {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  width: 200px;
-  height: 200px;
+  display: flex;
+  justify-content: center;
 }
-.img_container * {
-  vertical-align: middle;
+.cardContent {
+display : flex;
+justify-content: space-between;
+}
+.cardFirstContent{
+  display: flex;
+  justify-content: space-between;
+  padding : 20px;
+}
+.starIcon {
+  width : 30px;
+  padding : 10px;
+  position: relative;
+  bottom : 5px;
+}
+.cardText{
+  padding : 20px;
 }
 
+.cardImage {
+  padding : 5px;
+}
 .goldenContainer {
   background: linear-gradient(90deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
   height: 500px;
@@ -282,7 +294,6 @@ letter-spacing: 0em;
   margin: 0 auto;
 }
 .footer {
-  background: ;
   display: flex;
   justify-content: space-between;
   width: 95%;

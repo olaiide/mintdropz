@@ -4,7 +4,7 @@ import styles from "./LandingPage.module.css";
 import Nft from "../../assets/headerNft.svg";
 import splashVector from "../../assets/splashVector.svg";
 import goldenSvg from "../../assets/golden.svg";
-import Logo from "../../assets/Logo.svg"
+import Logo from "../../assets/Logo.svg";
 import discord from "../../assets/discord.svg";
 import twitter from "../../assets/twitter.svg";
 import instagram from "../../assets/instagram.svg";
@@ -26,21 +26,16 @@ const LandingPage = () => {
               <h2 className={styles.exclusive}>EXCLUSIVE</h2>
               <h4 className={styles.title}>newest NFT release</h4>
               <p className={styles.text}>
-                <span style={{fontWeight : '800'}}>The BILLIONAIRE CLUB</span> is a private collection of 10 000
-                billionaire
+                <span style={{ fontWeight: "800" }}>The BILLIONAIRE CLUB</span>{" "}
+                is a private collection of 10 000 billionaire
                 <span style={{ display: "block" }}>
                   apes NFTs—unique digital collectibles. The apes are stored as
                 </span>
                 ERC-721 tokens on the Ethereum blockchain and hosted on IPFS.
-                <span
-                  
-                  className={styles.reveal}
-                >
-                  Reveal on October 20th
-                </span>
+                <span className={styles.reveal}>Reveal on October 20th</span>
               </p>
 
-              <div style={{marginTop : '20px'}}>
+              <div style={{ marginTop: "20px" }}>
                 <input type='text' placeholder='your@email.com' />
                 <button className={styles.button}>Register</button>
               </div>
@@ -60,92 +55,38 @@ const LandingPage = () => {
           <div className={styles.gridContainer}>
             {Data.map((item) => (
               <>
-              <div className={styles.card}>
-              <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
+                <div className={styles.card}>
+                  <div className={styles.cardContent}>
                     <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
+                      className={styles.cardFirstContent}
                     >
-                      <img src={item.Image} alt='image__' />
-                      <p style={{ padding: "5px" }}>@knight</p>
+                      <img
+                        src={item.Image}
+                        alt='image__'
+                        className={styles.cardImage}
+                      />
+                      <p>@knight</p>
                     </div>
-                    <div style={{ display: "flex" }}>
-                      <img src={item.Star} alt='image__' width={"20px"} />
-                      <p style={{ padding: "5px" }}>213</p>
+                    <div className={styles.cardFirstContent}>
+                      <img src={item.Star} alt='image__' className={styles.starIcon}/>
+                      <p>213</p>
                     </div>
                   </div>
-                <div style={{display : 'flex', justifyContent : 'center'}}> 
-                   <img src={item.Nft} width="90%"/></div>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      padding: "5px",
-                    }}
-                  >
-                     <div style={{ padding: "5px" }}>
+                  <div className={styles.img_container}>
+                    <img src={item.Nft} width='90%' alt='NFT_img' />
+                  </div>
+                  <div className={styles.cardContent}>
+                    <div className={styles.cardText}>
                       <p>Current bid</p>
                       <p>0.54ETH</p>
                     </div>
-                    <div style={{ padding: "5px" }}>
-                      <p>Ending in</p>
-                      <p>12h 55m 2s</p>
-                    </div>
-                    </div>
-                  </div>
-                {/* <div className={styles.card}>
-                  <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
-                  >
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <img src={item.Image} alt='image__' />
-                      <p style={{ padding: "5px" }}>@knight</p>
-                    </div>
-                    <div style={{ display: "flex" }}>
-                      <img src={item.Star} alt='image__' width={"20px"} />
-                      <p style={{ padding: "5px" }}>213</p>
-                    </div>
-                  </div>
-                  <div
-                    style={{
-                      margin: "0 auto",
-                      textAlign: "center",
-                      display: "flex",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <img
-                      src={item.Nft}
-                      className={styles.img_container}
-                      width='400px'
-                    />
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      padding: "5px",
-                    }}
-                  >
-                    <div style={{ padding: "5px" }}>
-                      <p>Current bid</p>
-                      <p>0.54ETH</p>
-                    </div>
-                    <div style={{ padding: "5px" }}>
+                    <div className={styles.cardText}>
                       <p>Ending in</p>
                       <p>12h 55m 2s</p>
                     </div>
                   </div>
-                </div> */}
+                </div>
+              
               </>
             ))}
           </div>
@@ -186,20 +127,20 @@ const LandingPage = () => {
           </div>
           <div className={styles.footer}>
             <div className={styles.footerLogo}>
-             <div className={styles.footerImage}><img src={Logo} alt="logo"/></div>
-             <div className={styles.footerTerms}>
-              <div>Terms of service</div>
-              <div>Privacy policy</div>
+              <div className={styles.footerImage}>
+                <img src={Logo} alt='logo' />
+              </div>
+              <div className={styles.footerTerms}>
+                <div>Terms of service</div>
+                <div>Privacy policy</div>
               </div>
             </div>
             <div className={styles.footerSocials}>
-              <img src={twitter} alt="twitter logo" />
-              <img src={discord} alt="discord logo"/>
-              <img src={instagram} alt="instagram logo"/>
+              <img src={twitter} alt='twitter logo' />
+              <img src={discord} alt='discord logo' />
+              <img src={instagram} alt='instagram logo' />
             </div>
-            <div>
-
-            </div>
+            <div></div>
           </div>
         </div>
       </div>
@@ -209,30 +150,5 @@ const LandingPage = () => {
 
 export default LandingPage;
 
-// <div className={styles.card}>
-// <div>
-//   <div>
-//     <img src={item.Image} alt='image__' />
-//     <p>@knight</p>
-//   </div>
-//   <div>
-//     <img src={item.Star} alt='image__' />
-//     <p>213</p>
-//   </div>
-// </div>
-// <div>
-//   <img src={item.Nft} alt='nft__image' />
-// </div>
-// <div>
-//   <div>
-//     <p>Current bid</p>
-//     <p>0.54ETH</p>
-//   </div>
-//   <div>
-//     <p>Ending in</p>
-//     <p>12h 55m 2s</p>
-//   </div>
-// </div>
-// </div>
 
-// </>
+
