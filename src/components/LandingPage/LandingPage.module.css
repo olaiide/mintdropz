@@ -136,21 +136,22 @@ letter-spacing: 0em;
   letter-spacing: 0em;
   color: #fff;
   width: 700px;
+  padding-bottom: 1rem;
 }
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 0.3fr);
-  width: 70%;
-  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
   justify-content: center;
   row-gap: 30px;
   column-gap: 30px;
+  background-color: ;
+  padding: 0;
 }
 .card {
   background-color: yellow;
-  width: 400px;
-  height: 320px;
-  padding: px;
+  width: 100%;
+  height: px;
   background: radial-gradient(
     145.1% 102.55% at 0% 50%,
     rgba(255, 255, 255, 0.4) 0%,

@@ -61,8 +61,42 @@ const LandingPage = () => {
             {Data.map((item) => (
               <>
               <div className={styles.card}>
-                <img src={item.Nft} />
-              </div>
+              <div
+                    style={{ display: "flex", justifyContent: "space-between" }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <img src={item.Image} alt='image__' />
+                      <p style={{ padding: "5px" }}>@knight</p>
+                    </div>
+                    <div style={{ display: "flex" }}>
+                      <img src={item.Star} alt='image__' width={"20px"} />
+                      <p style={{ padding: "5px" }}>213</p>
+                    </div>
+                  </div>
+                <div style={{display : 'flex', justifyContent : 'center'}}> 
+                   <img src={item.Nft} width="90%"/></div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      padding: "5px",
+                    }}
+                  >
+                     <div style={{ padding: "5px" }}>
+                      <p>Current bid</p>
+                      <p>0.54ETH</p>
+                    </div>
+                    <div style={{ padding: "5px" }}>
+                      <p>Ending in</p>
+                      <p>12h 55m 2s</p>
+                    </div>
+                    </div>
+                  </div>
                 {/* <div className={styles.card}>
                   <div
                     style={{ display: "flex", justifyContent: "space-between" }}
