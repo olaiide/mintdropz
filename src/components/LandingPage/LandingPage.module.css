@@ -14,6 +14,32 @@
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+}
+.wrapper::after{
+  position: absolute;
+  content: "";
+  background-image: url('../../assets/Ellipse1.svg');
+  background-size: cover;
+  background-position: center;
+  width : 300px;
+  height : 300px;
+  border-radius: 50%;
+  top : px;
+  right : -20px;
+
+}
+.wrapper::before{
+  position: absolute;
+  content: "";
+  background-image: url('../../assets/Ellipse1.svg');
+  background-size: cover;
+  background-position: center;
+  width : 300px;
+  height : 350px;
+  top : 20px;
+  left : -100px;
+  border-radius: 50%;
 }
 .leftContent {
   width: 50%;
@@ -24,13 +50,13 @@
   margin: 0;
 }
 .rightWrapper {
-  width: 400px;
+  width: 405px;
   text-align: start;
 }
 .splashVector {
   position: relative;
-  top: 70px;
-  left: 270px;
+  top: 80px;
+  left: 240px;
 }
 .exclusive {
   font-family: Poppins;
@@ -46,25 +72,25 @@
   background-clip: text;
   color: transparent;
   font-size: 30px;
-  margin-top : -2rem;
+  margin-top: -2rem;
   padding-left: 6rem;
 }
 .text {
   font-family: Poppins;
-  font-size: 13px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0em;
   color: #fff;
-  width: 100%;
-  text-align: center;
+  width: inherit;
+  text-align: start;
   margin: 0 auto;
 }
 .reveal {
-  color : rgba(121, 24, 242, 1);
+  color: rgba(121, 24, 242, 1);
   display: block;
   text-align: end;
-  margin-right : 23px;
+  margin-right: 25px;
 }
 .button {
   width: 120px;
@@ -89,7 +115,7 @@ input {
   border: 2px solid rgba(121, 24, 242, 1);
   outline: none;
   background-color: #161515;
-  color : white
+  color: white;
 }
 input:placeholder {
   font-family: Roboto;
@@ -118,12 +144,10 @@ input:placeholder {
   color: transparent;
   font-size: 30px;
   font-family: Poppins;
-font-size: 50px;
-font-style: normal;
-font-weight: 600;
-line-height: px;
-letter-spacing: 0em;
-
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0em;
 }
 .collectionsText {
   font-family: Roboto;
@@ -141,14 +165,12 @@ letter-spacing: 0em;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   justify-content: center;
-  row-gap: 30px;
+  row-gap: 50px;
   column-gap: 30px;
   padding: 0;
 }
 .card {
-  background-color: yellow;
   width: 100%;
-  height: px;
   background: radial-gradient(
     145.1% 102.55% at 0% 50%,
     rgba(255, 255, 255, 0.4) 0%,
@@ -170,33 +192,48 @@ letter-spacing: 0em;
   justify-content: center;
 }
 .cardContent {
-display : flex;
-justify-content: space-between;
-}
-.cardFirstContent{
   display: flex;
   justify-content: space-between;
-  padding : 20px;
+}
+.cardFirstContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 .starIcon {
-  width : 30px;
-  padding : 10px;
+  width: 30px;
+  padding: 10px;
   position: relative;
-  bottom : 5px;
+  bottom: 5px;
 }
-.cardText{
-  padding : 20px;
+.cardText {
+  padding: 20px;
 }
-
+.textStyles {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+.nftText {
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: #a7a7a7;
+}
 .cardImage {
-  padding : 5px;
+  padding: 5px;
 }
 .goldenContainer {
   background: linear-gradient(90deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
   height: 500px;
   width: 100%;
   margin-top: 10rem;
-  overflow: hidden;
 }
 .goldenWrapper {
   display: flex;
@@ -290,7 +327,7 @@ justify-content: space-between;
 .line {
   background: linear-gradient(90deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
   height: 3px;
-  width: 330px;
+  width: 360px;
   margin: 0 auto;
 }
 .footer {
@@ -301,7 +338,7 @@ justify-content: space-between;
 }
 .footerLogo {
   display: flex;
-  padding: 25px;
+  padding: 30px;
   width: 50%;
 }
 .footerTerms {

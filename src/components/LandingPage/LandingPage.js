@@ -65,11 +65,11 @@ const LandingPage = () => {
                         alt='image__'
                         className={styles.cardImage}
                       />
-                      <p>@knight</p>
+                      <p className={styles.textStyles}>@knight</p>
                     </div>
                     <div className={styles.cardFirstContent}>
                       <img src={item.Star} alt='image__' className={styles.starIcon}/>
-                      <p>213</p>
+                      <p className={styles.textStyles}>213</p>
                     </div>
                   </div>
                   <div className={styles.img_container}>
@@ -77,12 +77,12 @@ const LandingPage = () => {
                   </div>
                   <div className={styles.cardContent}>
                     <div className={styles.cardText}>
-                      <p>Current bid</p>
-                      <p>0.54ETH</p>
+                      <p className={styles.nftText}>Current bid</p>
+                      <p className={styles.textStyles}>0.54ETH</p>
                     </div>
                     <div className={styles.cardText}>
-                      <p>Ending in</p>
-                      <p>12h 55m 2s</p>
+                      <p className={styles.nftText}>Ending in</p>
+                      <p className={styles.textStyles}> 12h 55m 2s</p>
                     </div>
                   </div>
                 </div>
