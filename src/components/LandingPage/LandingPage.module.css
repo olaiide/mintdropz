@@ -1,0 +1,321 @@
+.container {
+  width: 100%;
+  background-color: black;
+  min-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding-bottom: 30px;
+  background-color: #161515;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+.leftContent {
+  width: 50%;
+}
+.rightContent {
+  background-color:;
+  width: 40%;
+  text-align: start;
+  margin: 0;
+}
+.rightWrapper {
+  width: 400px;
+  text-align: start;
+}
+.splashVector {
+  position: relative;
+  top: 70px;
+  left: 270px;
+}
+.exclusive {
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+  color: #fff;
+  text-align: start;
+}
+.title {
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  margin-top : -2rem;
+  padding-left: 6rem;
+}
+.text {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0em;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.reveal {
+  color : rgba(121, 24, 242, 1);
+  display: block;
+  text-align: end;
+  margin-right : 23px;
+}
+.button {
+  width: 120px;
+  padding: 7px 30px 7px 30px;
+  outline: none;
+  border: none;
+  background: linear-gradient(90deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
+  color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  margin: 5px;
+}
+input {
+  height: px;
+  width: 150px;
+  border-radius: 0px;
+  padding: 11px 25px 11px 25px;
+  border: 2px solid rgba(121, 24, 242, 1);
+  outline: none;
+  background-color: #161515;
+  color : white
+}
+input:placeholder {
+  font-family: Roboto;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.collectionsWrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  background-color:;
+  overflow: hidden;
+}
+.collectionsHeader {
+  background-image: linear-gradient(
+    90deg,
+    #ac32e4 0%,
+    #7918f2 48%,
+    #4801ff 100%
+  );
+
+  background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  font-family: Poppins;
+font-size: 50px;
+font-style: normal;
+font-weight: 600;
+line-height: px;
+letter-spacing: 0em;
+
+}
+.collectionsText {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #fff;
+  width: 700px;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 0.3fr);
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+.card {
+  background-color: yellow;
+  width: 400px;
+  height: 320px;
+  padding: px;
+  background: radial-gradient(
+    145.1% 102.55% at 0% 50%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  color: #fff;
+  border: 1px solid;
+
+  border: radial-gradient(
+      80.79% 50% at 50% 50%,
+      #8c4424 0%,
+      rgba(140, 68, 36, 0) 100%
+    ),
+    linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.47) 100%);
+}
+
+.img_container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+}
+.img_container * {
+  vertical-align: middle;
+}
+
+.goldenContainer {
+  background: linear-gradient(90deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
+  height: 500px;
+  width: 100%;
+  margin-top: 10rem;
+  overflow: hidden;
+}
+.goldenWrapper {
+  display: flex;
+  flex-direction: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.goldenContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.goldenTitle {
+  color: #e2c668;
+  font-family: Poppins;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0em;
+  margin-bottom: -10px;
+}
+.goldenText {
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #fff;
+}
+.goldenImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 50%;
+}
+.goldenButton {
+  width: 300px;
+  padding: 10px 30px 10px 30px;
+  outline: none;
+  border: 3px solid #000000;
+  background: linear-gradient(90deg, #7918f2 48%, #4801ff 100%);
+  cursor: pointer;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+}
+.footerContainer {
+  width: 100%;
+}
+.footerContent {
+  margin: 0 auto;
+  border-bottom: 1px solid #818181;
+  padding-bottom: 10rem;
+  width: 90%;
+}
+.footerContainer h1 {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 84px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.signup {
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.signup::after {
+  content: url("../../assets/signUp.svg");
+  position: absolute;
+  padding: 8px;
+}
+.line {
+  background: linear-gradient(90deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
+  height: 3px;
+  width: 330px;
+  margin: 0 auto;
+}
+.footer {
+  background: ;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+.footerLogo {
+  display: flex;
+  padding: 25px;
+  width: 50%;
+}
+.footerTerms {
+  color: #767676;
+  display: flex;
+  padding: 5px;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footerTerms div {
+  padding: 5px;
+}
+.footerSocials {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+  margin: 10px;
+}
+.footerSocials img {
+  padding: 10px;
+}
